@@ -1,3 +1,14 @@
-<script>
-location.href="http://host.me:10001/"
+<html>
+<head>
+<title>Demo</title>
+<script src="jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+  url = "http://e3rpay.github.com/slipper/addr.js"
+  $.getScript(url, function() {
+    location.href="http://" + window.slipper.addr + ":10001/";
+  });
 </script>
+</body>
+</html>
